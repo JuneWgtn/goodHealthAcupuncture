@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
+    <title>Wellington acupuncture and herbal clinic</title>
+    <meta name="description" content="Good health acupuncture and herbal clinic is located in CBD Cuba street Wellington and Paraparaumu">
+    <link rel="stylesheet" type="text/css" href="css/screen_styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/screen_layout_large.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="css/screen_layout_small.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="css/screen_layout_medium.css">
+
+    <!-- <link rel="stylesheet" type="text/css" media="print" href="css/print.css" /> -->
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map-canvas');
+            var mapOptions = {
+                center: new google.maps.LatLng(-41.292181, 174.7763235),
+                zoom: 14,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+            var marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(-41.292181, 174.7763235) });
+            //  var infowindow = new google.maps.InfoWindow({ content: "<b>Unit 231 A, Level 1</b><br/>Level 1 Left Bank Cuba Mall<br/> Wellington" });
+            //  google.maps.event.addListener(marker, "click", function () { infowindow.open(map, marker); });
+            infowindow.open(map, marker);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    <div class="page">
+        <header>   
+            <h1 class="offleft">CBD cuba street wellington Paraparaumu</h1>         
+        </header>
+        <nav>
+            <a href="http://www.goodhealthacupuncture.co.nz/index.html">Home</a>
+            <a href="http://www.goodhealthacupuncture.co.nz/acupuncture-benefits.html">Chinese Acupuncture</a>
+            <a href="http://www.goodhealthacupuncture.co.nz/acupuncture-works.html">Testimonials</a>
+            <a href="http://www.goodhealthacupuncture.co.nz/acupuncturist-hebalist.html">Practitioners</a>
+            <a href="http://www.goodhealthacupuncture.co.nz/contact-good-health.html">Contact Us</a>
+        </nav>
+        <article class="two-column">
+            <h2>Contact Us</h2>
+            <p>
+                phone: +64 4 385-8289<br />
+                Henry: 021 2391935<br />
+                Jane: 021 1330025<br />                
+                email: hairui@xtra.co.nz or janehuang@xtra.co.nz<br />
+                 
+            </p>
+            <p>
+                Unit 231 A, Level 1 Left Bank Cuba Mall<br />               
+                <strong> Wellington</strong>  New Zealand<br />               
+            </p>
+            <p>
+                Level 1, 302 Kapiti Road <br />
+                Corner Kapiti/Hurley Roads<br />
+                <strong>Paraparaumu</strong><br />
+            </p>
+            <p>
+                Opeing hours:<br />
+                Monday - Friday: 11am -6:30pm<br />
+                Sunday: 11am -6:30pm (Paraparaumu)<br />               
+            </p>
+            
+            <section class="contact-form">
+                <h3>Make An Enquiry</h3>
+                <p>For more information about our clinic or our services, please fill out the form below. Fields marked with an asterisk are required.</p>
+                <form id="contactform" name="contact" method="post" action="/email">
+                    <label>Name:<span class="red">*</span></label>
+                    <input type="text" name="name" id="name" value="" required /><br />
+                    <label>Email:<span class="red">*</span></label>
+                    <input type="email" name="email" id="email" value="" required /> <br />
+                    <label>Phone:</label>
+                    <input type="text" name="phone" id="phone" value="" /><br />
+                    <label>Message:<span class="red">*</span></label>
+                    <textarea name="message" id="message" rows="10" required> </textarea><br />
+                    <label>What is thirteen minus 10?<span class="red">*</span></label>
+                    <input type="text" name="qa" id="qa" value="" required /> <br />
+                    <input type="submit" value="Send Enquiry" class="submit_btn" /><br />
+                </form>
+            </section>
+              
+        </article>
+        <aside>            
+            <div id="map-canvas"></div>
+            <div class="image"><img src="images/outside-good-health.jpg" width="265" height="198" alt="good health acupuncture and herbal clinic cuba street wellington" /></div>            
+        </aside>
+        <div class="clear-fix"></div>
+
+        <footer>
+            &copy; Good Health Acupuncture and Herbal Clinic
+        </footer>
+    </div>
+
+</body>
+</html>
+
+

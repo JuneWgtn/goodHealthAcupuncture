@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
+    <title>Experienced chinese acupuncturist herbalist ACC Wellington</title>
+    <meta name="description" content="Good Health Acupuncture and herbal clinic is a traditional Chinese Medical clinic at Cuba Street in Wellington. Henry and Jane are registered Acupuncturist and Herbalist.">
+    <link rel="stylesheet" type="text/css" href="css/screen_styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/screen_layout_large.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)" href="css/screen_layout_small.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)" href="css/screen_layout_medium.css">
+
+    <!-- <link rel="stylesheet" type="text/css" media="print" href="css/print.css" /> -->
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map-canvas');
+            var mapOptions = {
+                center: new google.maps.LatLng(-41.292181, 174.7763235),
+                zoom: 14,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions)
+            var marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(-41.292181, 174.7763235) });
+            //  var infowindow = new google.maps.InfoWindow({ content: "<b>Unit 231 A, Level 1</b><br/>Level 1 Left Bank Cuba Mall<br/> Wellington" });
+            //  google.maps.event.addListener(marker, "click", function () { infowindow.open(map, marker); });
+            infowindow.open(map, marker);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    <div class="page">
+        <header>    
+            <h1 class="offleft">Traditional chinese acupuncture and herbal medicine</h1>        
+        </header>
+        <nav>
+            <a href="http://www.goodhealthacupuncture.co.nz/index.html">Home</a>
+            <a href="http://www.goodhealthacupuncture.co.nz/acupuncture-benefits.html">Chinese Acupuncture</a>
+            <a href="http://www.goodhealthacupuncture.co.nz/acupuncture-works.html">Testimonials</a>
+            <a href="http://www.goodhealthacupuncture.co.nz/acupuncturist-hebalist.html">Practitioners</a>
+            <a href="http://www.goodhealthacupuncture.co.nz/contact-good-health.html">Contact Us</a>
+        </nav>
+        <article class="two-column">
+            <img src="images/clinic7.jpg" width="300" height="225" alt="image of good health acupuncture and herbal clinic" />
+            <h2>Welcome to Good Health Acupuncture and Herbal Clinic</h2>
+            <p>
+                We are members of the NZ Registrar of Acupuncturists, with over 25 years of experience.
+                We offer comprehensive and well-rounded treatment for injuries and illnesses through the use of traditional chinese medcine and acupuncture at our clinic on Cuba Street, Wellington and Kapiti Road Paraparaumu.
+                Here is the full list of condition we can help: 
+                <ul>
+                    <li><strong>Sports injuries, tennis elbow, back pain, frozen shoulder and sciatica</strong></li>
+                    <li><strong>Anxiety, depression, Insomnia</strong></li>
+                    <li><strong>Chronic fatigue, Migraine</strong></li>
+                    <li><strong>Menopause, dysmenorrhoeal, irregular menstruation</strong></li>
+                    <li><strong>Infertility, morning sickness and delay labour</strong></li>
+                    <li><strong>Acne, eczema, sinusitis and allergies</strong></li>
+                    <li><strong>General health maintenance</strong></li>
+                </ul>
+            </p>
+            <div class="clear-fix"></div>
+            <div class="promo_container">
+                <section class="promo one">
+                    <h3>Henry Su</h3>
+                    <p>
+                        Henry graduated from Guangzhou University of Traditional Chinese Medicine in 1988. He recieved his Bachelor of Medicine degree, major in acupuncture.
+                         he is a NZQA Authorised Assessor since 2000. With close to 30 years of clinical experience, research and teaching, he has successfully treated thousands of patients.
+                    </p>
+                    <p><a class="cta" href="http://www.goodhealthacupuncture.co.nz/acupuncturist-hebalist.html#henry">Read more about Henry...</a></p>
+                </section>
+                <section class="promo two">
+                    <h3>Jane Huang</h3>
+                    <p>
+                        Jane Huang has over 25 years of clinical experience in China and New Zealand.
+                        She received her Medical Degree after completing a 5 year course in Guangzhou University of Traditional Chinese Medicine and has practiced Acupuncture and Traditional Chinese Medicine in Guangdong Provincial People's
+                        Hospital in China for 10 years
+                    </p>
+                    <p><a class="cta" href="http://www.goodhealthacupuncture.co.nz/acupuncturist-hebalist.html#jane">Read more about Jane...</a></p>
+                </section>
+
+            </div>
+        </article>
+        <aside>
+            <p>
+                <strong>Wellington</strong><br />
+                Unit 231 A, Level 1<br>
+                Left Bank Cuba Mall<br>
+                Wellington New Zealand<br>                
+            </p>
+            <p>
+                <strong>Paraparaumu</strong><br />
+                Level 1, 302 Kapiti Road<br />
+                Corner Kapiti/Hurley Road</p>
+            <p>
+                phone: +64 4 <strong>385-8289</strong><br />
+                Henry Mobile: +64 21 239 1935<br />
+                Jane Mobile: +64 21 133-0025<br />
+                email: hairui@xtra.co.nz
+            </p>
+            <p>
+                <strong>Opeing hours:</strong><br />
+                Monday - Friday: 11am - 6:30pm<br />
+                Sunday: 11am -6pm (Paraparaumu)<br />
+            </p>
+            <div id="map-canvas"></div>
+            <div class="image"><img src="images/ACC-logo.jpg" width="160" height="102" alt="registed ACC treatmet providers" /></div>
+            <p>We are registed ACC treatmet providers.</p>
+        </aside>
+        <div class="clear-fix"></div>
+
+        <footer>
+            &copy; Good Health Acupuncture and Herbal Clinic
+        </footer>
+    </div>
+
+</body>
+</html>
+
+
