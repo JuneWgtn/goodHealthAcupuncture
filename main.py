@@ -22,10 +22,9 @@ class SendEmail(webapp2.RequestHandler):
     email = self.request.get('email', '')
     phone = self.request.get('phone', '')
     msg = self.request.get('message', '')
-    qa = self.request.get('qa', '')
 
-    if '3' != qa or email == '':
-      self.response.out.write("Error: You did not answer the question correctly.")   
+    if email == '':
+      self.response.out.write("Error: Email is required.")   
     else:
       _subject = "Message from: " + name + ", Re: enquiry"
       msg += "\n\nI can be reached at "
@@ -36,6 +35,7 @@ class SendEmail(webapp2.RequestHandler):
       message = mail.EmailMessage(sender = "goodhealthacupuncturewgtn@gmail.com", to = "hairui@xtra.co.nz")
       message.subject = _subject
       message.body = msg
+      message.reply_to = email 
       message.send()
       self.redirect('/confirm-email.html')
 
